@@ -1,5 +1,5 @@
 {% set name = "exspy" %}
-{% set version = "0.3" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/exspy-{{ version }}.tar.gz
-  sha256: a61305473b458c4674c5a7b4c0e0b9594d1ab78447d665736e14feafbcf368ba
+  sha256: 334c5e65e19f385f39bc560e3cff5eeaafe3568d4c3c2f5402abe68a8192b578
 
 build:
   noarch: python
