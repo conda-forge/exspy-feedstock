@@ -1,5 +1,5 @@
 {% set name = "exspy" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/exspy-{{ version }}.tar.gz
-  sha256: 334c5e65e19f385f39bc560e3cff5eeaafe3568d4c3c2f5402abe68a8192b578
+  sha256: c22ab6a3d5785f3194b4aead8f32d11f4161c55b042fe1d270caacfbf26f2397
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - dask-core
-    - hyperspy-base >=2.0
+    - hyperspy-base >=2.3.0
     - matplotlib-base
     - numexpr
     - numpy
