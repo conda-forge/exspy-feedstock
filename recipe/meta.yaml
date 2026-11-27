@@ -24,6 +24,7 @@ requirements:
     - python >={{ python_min }}
     - dask-core
     - hyperspy-base >=2.6.0
+    - lazy-loader
     - matplotlib-base
     - numexpr
     - numpy
@@ -31,6 +32,7 @@ requirements:
     - pooch
     - prettytable
     - requests
+    - rosettasciio>=0.16.0
     - scipy
     - traits
 
