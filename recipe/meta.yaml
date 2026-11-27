@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - dask-core
-    - hyperspy-base >=2.3.0
+    - hyperspy-base >=2.6.0
     - matplotlib-base
     - numexpr
     - numpy
