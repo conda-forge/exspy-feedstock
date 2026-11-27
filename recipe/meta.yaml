@@ -32,7 +32,7 @@ requirements:
     - pooch
     - prettytable
     - requests
-    - rosettasciio>=0.16.0
+    - rosettasciio >=0.16.0
     - scipy
     - traits
 
